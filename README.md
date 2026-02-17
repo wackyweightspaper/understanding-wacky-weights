@@ -21,11 +21,8 @@ This repository is built upon the official [SPLADE implementation](https://githu
 * **`splade/`**: Contains the modified source code and core logic.
 * **`conf/`**: Contains the configuration files for reproducing the training of different SPLADE variants.
 * **`scripts/`**: Contains the scripts to reproduce the training and evaluation of the different SPLADE variants, as well as the calculation of Wackiness Scores.
+* **`notebooks/`**: Contains Jupyter notebooks with experiments from the paper
 * **`utils/`**: Contains utility functions for evaluation and Wackiness Scores Calculation.
-
-<!-- ### Data
-
-Some files like model checkpoints or saved per-token Wackiness Scores for the tested models are not included in the repository due to their size. You can download them from [Download Link](<link>). -->
 
 ### Reproducing SPLADE’s Training
 
