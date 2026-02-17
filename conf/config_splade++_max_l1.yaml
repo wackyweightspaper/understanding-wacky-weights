@@ -1,0 +1,27 @@
+# FILES
+defaults: # (these specify which config FILES to use)
+  ############## TRAIN ###################################
+  - train/config: splade
+  - train/data: msmarco
+  - train/model: splade
+  ############## INDEX ###################################
+  - index: msmarco
+  ############## RETRIEVE ################################
+  - retrieve_evaluate: all
+  ############### FLOPS ##################################
+  - flops: msmarco
+
+# Direct PARAMETER setting
+config:
+  loss: InBatchPairwiseNLL
+  augment_pair: in_batch_negatives
+  regularizer:
+    L1:
+      lambda_q: 0.0003
+      lambda_d: 0.0001
+      targeted_rep: rep
+      reg: L1
+      T: 50000
+  checkpoint_dir: models/splade_max_l1/checkpoint
+  index_dir: models/splade_max_l1/index
+  out_dir: models/splade_max_l1/out
