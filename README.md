@@ -26,9 +26,15 @@ This repository is built upon the official [SPLADE implementation](https://githu
 
 ### Reproducing SPLADE’s Training
 
-Script ``scripts/train.sh`` contains the commands to train the different SPLADE variants.
-Script ``scripts/eval_msmarco.sh`` contains the commands to evaluate the different SPLADE variants on MSMARCO, TREC DL 2019, and TREC DL 2020.
+* Script ``scripts/train.sh`` contains the commands to train the different SPLADE variants.
+* Script ``scripts/eval_msmarco.sh`` contains the commands to evaluate the different SPLADE variants on MSMARCO, TREC DL 2019, and TREC DL 2020.
 
 ### Calculating Wackiness Scores
 
-Script ``scripts/calculate_wackiness_scores.sh`` contains the commands to calculate the Wackiness Scores for the different SPLADE variants.
+The following pipeline describes how to obtain Wackiness Scores for a given SPLADE variant:
+
+1. **Obtain precomputed index:** First, use `scripts/eval_msmarco.sh` to index and evaluate the model on MSMARCO. The precomputed MS MARCO index is required for the next steps.
+2. **Precompute document frequencies:** Compute the document frequencies of individual tokens across the MSMARCO index by running `scripts/calculate_dfs.sh`. These frequencies are used to derive inverse document frequency (IDF) values needed for the Wackiness Score calculation.
+3. **Run Wackiness Score calculation:** Run `scripts/calculate_wackiness_scores.sh` to compute the Wackiness Scores using the precomputed index and document frequencies.
+
+Sample parameters for some models such as SPLADE-v2 and SPLADE-v3 are provided in the scripts for reference. We will publish checkpoints for other reproduced SPLADE variants and precomputed wackiness scores for them upon deanonymizing this repository.

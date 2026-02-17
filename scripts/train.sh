@@ -7,9 +7,9 @@ python3 -m splade.all \
     config.train_batch_size=128 \
     config.eval_batch_size=128 \
     config.index_retrieve_batch_size=128 \
-    config.checkpoint_dir=models/splade_max/checkpoint \
-    config.index_dir=models/splade_max/index \
-    config.out_dir=models/splade_max/out
+    config.checkpoint_dir=models/splade_v2_max/checkpoint \
+    config.index_dir=models/splade_v2_max/index \
+    config.out_dir=models/splade_v2_max/out
 
 ###########################################################################################
 
@@ -20,9 +20,9 @@ python3 -m splade.all \
     config.train_batch_size=128 \
     config.eval_batch_size=128 \
     config.index_retrieve_batch_size=128 \
-    config.checkpoint_dir=models/splade_max_l1/checkpoint \
-    config.index_dir=models/splade_max_l1/index \
-    config.out_dir=models/splade_max_l1/out
+    config.checkpoint_dir=models/splade_v2_l1/checkpoint \
+    config.index_dir=models/splade_v2_l1/index \
+    config.out_dir=models/splade_v2_l1/out
 
 ###########################################################################################
 
@@ -33,9 +33,9 @@ python3 -m splade.all \
     config.train_batch_size=128 \
     config.eval_batch_size=128 \
     config.index_retrieve_batch_size=128 \
-    config.checkpoint_dir=models/splade_max_modernbert/checkpoint \
-    config.index_dir=models/splade_max_modernbert/index \
-    config.out_dir=models/splade_max_modernbert/out
+    config.checkpoint_dir=models/splade_v2_modernbert/checkpoint \
+    config.index_dir=models/splade_v2_modernbert/index \
+    config.out_dir=models/splade_v2_modernbert/out
 
 ###########################################################################################
 
@@ -46,9 +46,9 @@ python3 -m splade.all \
     config.train_batch_size=128 \
     config.eval_batch_size=128 \
     config.index_retrieve_batch_size=128 \
-    config.checkpoint_dir=models/splade_max_distilroberta/checkpoint \
-    config.index_dir=models/splade_max_distilroberta/index \
-    config.out_dir=models/splade_max_distilroberta/out
+    config.checkpoint_dir=models/splade_v2_distilroberta/checkpoint \
+    config.index_dir=models/splade_v2_distilroberta/index \
+    config.out_dir=models/splade_v2_distilroberta/out
 
 ###########################################################################################
 
@@ -59,9 +59,9 @@ python3 -m splade.all \
     config.train_batch_size=128 \
     config.eval_batch_size=128 \
     config.index_retrieve_batch_size=128 \
-    config.checkpoint_dir=models/splade_sum/checkpoint \
-    config.index_dir=models/splade_sum/index \
-    config.out_dir=models/splade_sum/out
+    config.checkpoint_dir=models/splade_v2_sum/checkpoint \
+    config.index_dir=models/splade_v2_sum/index \
+    config.out_dir=models/splade_v2_sum/out
 
 ###########################################################################################
 
@@ -72,6 +72,6 @@ python3 -m splade.all \
     config.train_batch_size=128 \
     config.eval_batch_size=128 \
     config.index_retrieve_batch_size=128 \
-    config.checkpoint_dir=models/splade_cls/checkpoint \
-    config.index_dir=models/splade_cls/index \
-    config.out_dir=models/splade_cls/out
+    config.checkpoint_dir=models/splade_v2_cls/checkpoint \
+    config.index_dir=models/splade_v2_cls/index \
+    config.out_dir=models/splade_v2_cls/out

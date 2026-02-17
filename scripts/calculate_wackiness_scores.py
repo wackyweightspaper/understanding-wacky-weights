@@ -11,7 +11,7 @@ from utils.utils import SpladeRetriever, get_splade_vectors_for_queries, rank_ex
 from collections import defaultdict
 import os
 import pyterrier as pt
-from notebooks.utils import tokenize_rm3_query, tokenize_and_stem
+from utils.utils import tokenize_rm3_query, tokenize_and_stem
 from functools import partial
 from nltk.corpus import stopwords
 
@@ -39,10 +39,10 @@ def parse_args():
     parser.add_argument("--doc-ids-path", type=str, default=None,
                         help="Path to doc_ids.pkl. Defaults to <index_dir>/doc_ids.pkl.")
     parser.add_argument("--token-freqs-path", type=str,
-                        default="./data/splade_v2_tokenizer_idfs/msmarco_splade_modernbert_idfs.json",
+                        default="./data/idfs/msmarco_splade_v2_idfs.json",
                         help="Path to JSON with token frequencies.")
     parser.add_argument("--token-scores-save-path", type=str,
-                        default="./experiments/wacky_tokens/splade_modernbert_flops_expansion_tokens_tf_idfs_msmarco_train_10k.json",
+                        default="./experiments/wackiness_scores/splade_v2_original_wackiness_scores.json",
                         help="Where to save the token scores JSON.")
 
     # Runtime parameters
